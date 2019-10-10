@@ -14,10 +14,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString * title;
 @property (nonatomic, copy) NSString * bodyText;
-@property (nonatomic, copy, readonly) NSDate * timeStamp;
+@property (nonatomic, copy, readonly) NSDate * timestamp;
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 - (instancetype)initEntryTitle: (NSString *)title
                       bodyText:(NSString *)bodytext;
+
+- (NSDictionary *)dictionaryCopy ;
 
 @end
 

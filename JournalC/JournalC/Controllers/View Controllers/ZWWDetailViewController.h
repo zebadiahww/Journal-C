@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZWWEntryController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZWWDetailVC : UIViewController
+@interface ZWWDetailViewController : UIViewController
+
+@property (strong, nonatomic) ZWWEntry * entry;
 
 @end
 

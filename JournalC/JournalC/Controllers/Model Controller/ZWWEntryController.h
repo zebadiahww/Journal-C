@@ -17,9 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSMutableArray<ZWWEntry * > * entries;
 
-- (void)addEntryWithTitle:(NSString *)title bodyText:(NSString *)bodyText;
+- (void)addEntryWithTitle: (NSString*)title bodyText:(NSString *)bodyText;
 - (void)removeEntry:(ZWWEntry *)entry;
 - (void)updateEntryWithEntry:(ZWWEntry *)entry title:(NSString *)title bodyText:(NSString *)bodyText;
+- (void)loadFromPersistentStore;
 
 @end
 

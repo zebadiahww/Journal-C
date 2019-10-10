@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8501F771234BEA1100A67488 /* ZWWDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8501F770234BEA1100A67488 /* ZWWDetailVC.m */; };
+		8501F771234BEA1100A67488 /* ZWWDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8501F770234BEA1100A67488 /* ZWWDetailViewController.m */; };
 		8549FCC2234BCD660063E93C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8549FCC1234BCD660063E93C /* AppDelegate.m */; };
 		8549FCC5234BCD660063E93C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8549FCC4234BCD660063E93C /* SceneDelegate.m */; };
 		8549FCCB234BCD660063E93C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8549FCC9234BCD660063E93C /* Main.storyboard */; };
@@ -20,8 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8501F76F234BEA1100A67488 /* ZWWDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWWDetailVC.h; sourceTree = "<group>"; };
-		8501F770234BEA1100A67488 /* ZWWDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWWDetailVC.m; sourceTree = "<group>"; };
+		8501F76F234BEA1100A67488 /* ZWWDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWWDetailViewController.h; sourceTree = "<group>"; };
+		8501F770234BEA1100A67488 /* ZWWDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWWDetailViewController.m; sourceTree = "<group>"; };
 		8549FCBD234BCD660063E93C /* JournalC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8549FCC0234BCD660063E93C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8549FCC1234BCD660063E93C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,8 +116,8 @@
 			children = (
 				8549FCE5234BD9970063E93C /* ZWWEntryListTableViewController.h */,
 				8549FCE6234BD9970063E93C /* ZWWEntryListTableViewController.m */,
-				8501F76F234BEA1100A67488 /* ZWWDetailVC.h */,
-				8501F770234BEA1100A67488 /* ZWWDetailVC.m */,
+				8501F76F234BEA1100A67488 /* ZWWDetailViewController.h */,
+				8501F770234BEA1100A67488 /* ZWWDetailViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -214,7 +214,7 @@
 				8549FCC2234BCD660063E93C /* AppDelegate.m in Sources */,
 				8549FCD3234BCD670063E93C /* main.m in Sources */,
 				8549FCC5234BCD660063E93C /* SceneDelegate.m in Sources */,
-				8501F771234BEA1100A67488 /* ZWWDetailVC.m in Sources */,
+				8501F771234BEA1100A67488 /* ZWWDetailViewController.m in Sources */,
 				8549FCE4234BD3970063E93C /* ZWWEntryController.m in Sources */,
 				8549FCE7234BD9970063E93C /* ZWWEntryListTableViewController.m in Sources */,
 			);

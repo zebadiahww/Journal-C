@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "ZWWEntry.h"
 #import "ZWWEntryController.h"
+#import "ZWWDetailViewController.h"
 
 @interface ZWWEntryListTableViewController ()
 
@@ -19,8 +20,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+//    [[ZWWEntryController sharedController] loadFromPersistentStore];
+    
+    NSLog(@"");
 }
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:true];
+    [[self tableView] reloadData];
+}
+
+
 
 #pragma mark - Table view data source
 
@@ -44,17 +54,23 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         ZWWEntry * entry = ZWWEntryController.sharedController.entries[indexPath.row];
         [ZWWEntryController.sharedController removeEntry:entry];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
 
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"toViewEntry"]) {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        ZWWEntry *entry = [ZWWEntryController sharedController].entries[indexPath.row];
+        
+        ZWWDetailViewController *detailViewController = segue.destinationViewController;
+        detailViewController.entry = entry;
+    }
 }
-
 
 @end
