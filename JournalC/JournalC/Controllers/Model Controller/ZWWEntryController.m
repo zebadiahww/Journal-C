@@ -24,7 +24,7 @@
 {
     self = [super init];
     if (self) {
-        _entries = [NSMutableArray array];
+        _entries = [NSMutableArray new];
     }
     return self;
 }
@@ -32,14 +32,19 @@
 - (void)addEntryWithTitle:(NSString *)title bodyText:(NSString *)bodyText
 {
     ZWWEntry *entry = [[ZWWEntry alloc] initEntryTitle:title bodyText:bodyText];
-    [self.entries addObject:entry];
+    NSMutableArray *whyThough = self.entries.mutableCopy;
+       [whyThough addObject:entry];
+    self.entries = \
+']whyThough;
     [self saveToPersistentStore];
     
 }
 
 -(void)removeEntry:(ZWWEntry *)entry
 {
-    [_entries removeObject:entry];
+    NSMutableArray *whyThough = self.entries.mutableCopy;
+    [whyThough removeObject:entry];
+    self.entries = whyThough;
     [self saveToPersistentStore];
 }
 

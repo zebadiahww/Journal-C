@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [[ZWWEntryController sharedController] loadFromPersistentStore];
+    [[ZWWEntryController sharedController] loadFromPersistentStore];
     
     NSLog(@"");
 }
@@ -28,6 +28,8 @@
 {
     [super viewWillAppear:true];
     [[self tableView] reloadData];
+//    [[ZWWEntryController sharedController] loadFromPersistentStore];
+
 }
 
 
